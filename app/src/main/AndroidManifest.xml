@@ -20,10 +20,20 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WildCoin"
         tools:targetApi="31">
+        <activity
+            android:name=".signin"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buy_wildcoin"
+            android:exported="false" />
         <activity
             android:name=".SenderActivity"
             android:exported="false" />
@@ -31,7 +41,10 @@
             android:name=".RecieveActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".amount_entry"
+            android:exported="false" />
+        <activity
+            android:name=".splash_screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
